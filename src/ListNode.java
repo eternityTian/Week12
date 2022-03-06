@@ -36,7 +36,7 @@ class ListNode {
             ln1 = ln1.next;
         }
         temp = res;
-        while (ln1 != null && ln2 != null) {
+        while (ln1 != null || ln2 != null) {
             if (ln1 == null) {
                 res.next = ln2;
                 ln2 = ln2.next;
@@ -105,14 +105,14 @@ class ListNode {
         System.out.println("反转后头节点值"+test1(l1).val);
 
         //第二题测试
-        ListNode l4 = new ListNode(3);
-        ListNode l5 = new ListNode(9);
-        ListNode l6 = new ListNode(17);
+        ListNode l4 = new ListNode(1);
+        ListNode l5 = new ListNode(2);
+        ListNode l6 = new ListNode(3);
         l4.next = l5;
         l5.next = l6;
-        ListNode n1 = new ListNode(2);
-        ListNode n2 = new ListNode(4);
-        ListNode n3 = new ListNode(5);
+        ListNode n1 = new ListNode(1);
+        ListNode n2 = new ListNode(3);
+        ListNode n3 = new ListNode(4);
         ListNode n4 = new ListNode(10);
         n1.next = n2;
         n2.next = n3;
